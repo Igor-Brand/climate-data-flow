@@ -1,0 +1,4 @@
+.venv
+config/.env
+data/weather_data.json
+uv.lock
