@@ -1,3 +1,5 @@
+# Primeiro código
+
 import json
 import logging
 import os
@@ -7,14 +9,12 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv(Path("config/.env"))
-print(load_dotenv)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
 api_key = os.getenv("OPENWEATHER_API_KEY")
-print(api_key)
 url = (
     f"https://api.openweathermap.org/data/2.5/weather"
     f"?q=Brasilia,BR&units=metric&appid={api_key}"
