@@ -31,9 +31,10 @@ engine = get_engine()
 def load_weather_data(table_name: str, df):
 
     df.to_sql(
-        name=table_name,
-        con=engine,
-        if_exists='append',
+        'bsb_weather',
+        engine,
+        schema='public',
+        if_exists='append',  # só pra teste inicial
         index=False
     )
 

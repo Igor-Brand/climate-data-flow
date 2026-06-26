@@ -81,7 +81,7 @@ def normalize_weather_columns(df: pd.DataFrame) -> pd.DataFrame:
 def drop_columns(df: pd.DataFrame, columns_name: list[str]) -> pd.DataFrame:
     logging.info(f"Removendo colunas: {columns_name}")
 
-    df = df.drop(columns=columns_name)
+    df = df.drop(columns=columns_name,errors="ignore")
 
     logging.info(f"Colunas removidas - {len(df.columns)} colunas restantes")
 
