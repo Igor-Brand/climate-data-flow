@@ -40,7 +40,3 @@ O pipeline segue o fluxo **ETL (Extract, Transform, Load)**:
 - `dags/`: Arquivos de configuração do Airflow.
 - `config/`: Configurações e variáveis de ambiente.
 - `notebooks/`: Análises exploratórias dos dados.
-
----
-
-*Dica: Lembre-se de não subir o arquivo `.env` ou a pasta `data` para o GitHub, utilizando o `.gitignore` conforme mencionado no vídeo (1:07:50).* 
